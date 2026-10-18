@@ -1,0 +1,73 @@
+{
+    "geode": "5.10.1",
+    "gd": {
+        "win": "2.2081",
+        "mac": "2.2081",
+        "android": "2.2081",
+        "ios": "2.2081"
+    },
+    "id": "lasokar.frame-windows",
+    "name": "Frame Windows",
+    "version": "1.0.0",
+    "developer": "Lasokar",
+    "description": "Measures and displays a level's frame windows as you play in real time.",
+    "tags": [
+        "gameplay",
+        "utility",
+        "cheat"
+    ],
+    "dependencies": {
+        "geode.node-ids": ">=v1.23.3"
+    },
+    "resources": {
+        "files": [
+            "button.png",
+            "glow.png",
+            "sounds/frame1.mp3",
+            "sounds/frame2.mp3",
+            "sounds/frame3.mp3",
+            "sounds/frame4.mp3",
+            "sounds/frame5.mp3",
+            "sounds/frame6.mp3",
+            "sounds/frame7.mp3",
+            "sounds/frame8.mp3",
+            "sounds/frame9.mp3",
+            "sounds/frame10.mp3",
+            "sounds/frame11.mp3",
+            "sounds/frame12.mp3"
+        ]
+    },
+    "settings": {
+        "maximum-window-frames": {
+            "name": "Maximum Window",
+            "description": "Sets a cap on number of frames to measure both ways. Keep in mind that higher amounts may cause lag.",
+            "type": "string",
+            "default": "12",
+            "one-of": [
+                "12",
+                "17",
+                "30",
+                "60",
+                "120",
+                "240"
+            ]
+        },
+        "show-rings": {
+            "name": "Show Rings",
+            "type": "bool",
+            "default": true
+        },
+        "show-counters": {
+            "name": "Show Counters",
+            "description": "Displays the counters in the top left corner.",
+            "type": "bool",
+            "default": true
+        },
+        "ding-sounds": {
+            "name": "Sounds",
+            "description": "Enables the *ding* sounds after a frame window.",
+            "type": "bool",
+            "default": true
+        }
+    }
+}
